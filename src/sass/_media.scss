@@ -4,6 +4,14 @@
             margin-right: 65px;
         }
     }
+    .consultation{
+        &__wrapper{
+            padding: 0 0 0 100px;
+        }
+    }
+    .prev, .next{
+        display: none;
+    }
 }
 
 @media (max-width: 575px){
@@ -38,6 +46,24 @@
         }
         &__wrapper{
             margin-right: 10px;
+        }
+    }
+    .consultation{
+        &__wrapper{
+            padding: 0;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .title{
+        &_left{
+            font-size: 21px;
+        }
+    }
+    .carousel{
+        img{
+            width: 300px;
         }
     }
 }
