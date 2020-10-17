@@ -66,4 +66,25 @@
             width: 300px;
         }
     }
+    .catalog{
+        &__tab{
+            div{
+                font-size: 11px;
+            }
+        }
+        &__content{
+            margin-left: 10px;
+        }
+    }
+    .reviews{
+        &__photo{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__text{
+            font-size: 12px;
+        }
+    }
 }
