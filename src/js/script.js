@@ -1,4 +1,4 @@
-let slider = tns({
+const slider = tns({
     container: '.carousel_inner',
     items: 1,
     slideBy: 'page',
@@ -70,4 +70,19 @@ $('a[href^="#"]').click(function() {
     const _href = $(this).attr('href');
     $('html, body').animate({scrollTop: $(_href).offset().top+'px'});
     return false
+});
+
+// === scroll for reviews ===
+
+const pointForScroll = document.querySelector('.reviews');
+const pointForScrollTop = $(pointForScroll).offset().top - 750;
+
+const animes = document.querySelectorAll('.reviews__item');
+animes.forEach(function(item) {
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > pointForScrollTop) {
+            item.classList.add('animated');
+            item.classList.add('fadeInUp');
+        }
+    });
 });
